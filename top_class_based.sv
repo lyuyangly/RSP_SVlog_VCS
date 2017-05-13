@@ -1,9 +1,8 @@
-import rps_env_pkg::*;
-`include "interfaces.sv"
-`include "rps_driver.sv"
-`include "rps_monitor.sv"
-`include "rps_env.sv"
 module top_class_based();
+	
+	import rps_env_pkg::*;
+	`include "rps_env.sv";
+
 	rps_clk_if clk_if();
 	rps_clock_reset cr(.clk(clk_if.clk), .rst(clk_if.rst));
 
@@ -35,6 +34,11 @@ module top_class_based();
 		join_none
 		env.execute();
 		$stop;
+	end
+
+	initial begin
+		 $fsdbDumpfile("tb.fsdb");
+		 $fsdbDumpvars;
 	end
 
 endmodule

@@ -1,3 +1,4 @@
+import rps_env_pkg::*;
 interface rps_clk_if;
 	bit clk, rst, dut_busy;
 endinterface
