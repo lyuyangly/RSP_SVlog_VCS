@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm csrc/ DVEfiles/ inter.vpd simv simv.daidir ucli.key  -rf
-vcs -fsdb -cc /home/ProgramFiles/synopsys/gcc-4.4.7/bin/gcc -ld /home/ProgramFiles/synopsys/gcc-4.4.7/bin/gcc -sverilog -debug_all rps_env_pkg.sv interfaces.sv rps_dut.sv rps_clock_reset.sv top_class_based.sv 
+vcs -fsdb -cc /home/ProgramFiles/synopsys/gcc-4.4.7/bin/gcc -ld /home/ProgramFiles/synopsys/gcc-4.4.7/bin/gcc -sverilog -debug_all rps_env_pkg.sv interfaces.sv rps_dut.sv rps_clock_reset.sv top_class_based.sv

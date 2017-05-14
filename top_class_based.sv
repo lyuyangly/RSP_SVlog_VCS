@@ -33,7 +33,8 @@ module top_class_based();
 			cr.run();
 		join_none
 		env.execute();
-		$stop;
+		$finish;
+		// $stop;
 	end
 
 	initial begin
